@@ -1,4 +1,4 @@
-# Team
+# Delivery Drone Simulation
 Vincent Liu, Tyler Pham, Preston Zhu, Rodrigo Alanis
 
 **Docker Link**
