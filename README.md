@@ -1,5 +1,5 @@
-# Team-001-16-homework4
-Vincent Liu: liu01841, Tyler Pham: pham: pham0443, Preston Zhu: zhu00604, Rodrigo Alanis: alani030
+# Team
+Vincent Liu, Tyler Pham, Preston Zhu, Rodrigo Alanis
 
 **Docker Link**
 
