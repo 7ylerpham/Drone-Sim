@@ -1,0 +1,4 @@
+<map id="Weather" name="Weather">
+<area shape="rect" id="node1" title="Weather Singleton that contains singular instance of weather." alt="" coords="5,95,83,121"/>
+<area shape="rect" id="node2" href="$classVector3.html" title="A class built solely to handle 3D vector mathematics." alt="" coords="8,5,80,32"/>
+</map>

@@ -1,0 +1,156 @@
+\hypertarget{classWeather}{}\doxysection{Weather Class Reference}
+\label{classWeather}\index{Weather@{Weather}}
+
+
+\mbox{\hyperlink{classWeather}{Weather}} Singleton that contains singular instance of weather.  
+
+
+
+
+{\ttfamily \#include $<$Weather.\+h$>$}
+
+
+
+Collaboration diagram for Weather\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classWeather__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeather_a9bdb9ef14a7e34e2fdc49f35bf0e3508}\label{classWeather_a9bdb9ef14a7e34e2fdc49f35bf0e3508}} 
+\mbox{\hyperlink{classWeather_a9bdb9ef14a7e34e2fdc49f35bf0e3508}{Weather}} (\mbox{\hyperlink{classWeather}{Weather}} \&other)=delete
+\begin{DoxyCompactList}\small\item\em copy constructor is restricted \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWeather_a2f10202c07c004f93162d78a02f6fc1e}\label{classWeather_a2f10202c07c004f93162d78a02f6fc1e}} 
+void \mbox{\hyperlink{classWeather_a2f10202c07c004f93162d78a02f6fc1e}{operator=}} (const \mbox{\hyperlink{classWeather}{Weather}} \&)=delete
+\begin{DoxyCompactList}\small\item\em assignment operator is restricted \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classWeather_ac371725c67bf575e6f46f766dbf6012c}{Get\+Wind\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em getter method for the wind speed \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classWeather_acbe80228733441d7bf8eba605502c0eb}{Get\+Wind\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em gets the direction of the wind in \mbox{\hyperlink{classWeather}{Weather}} \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classWeather_a22ebdcee63edcaf1f41d8237c5a0feee}{Get\+Weather\+Type}} ()
+\begin{DoxyCompactList}\small\item\em gets the type of weather currently in \mbox{\hyperlink{classWeather}{Weather}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWeather_a49d5f2cace7e5fc79c842917652e643f}\label{classWeather_a49d5f2cace7e5fc79c842917652e643f}} 
+void \mbox{\hyperlink{classWeather_a49d5f2cace7e5fc79c842917652e643f}{Randomize\+Weather}} ()
+\begin{DoxyCompactList}\small\item\em randomizes the values for the wind speed, direction, and weather type in \mbox{\hyperlink{classWeather}{Weather}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWeather_a9da6a942b5743f899756aa7f6d8e7ea2}\label{classWeather_a9da6a942b5743f899756aa7f6d8e7ea2}} 
+void \mbox{\hyperlink{classWeather_a9da6a942b5743f899756aa7f6d8e7ea2}{Set\+Weather}} (float wind\+Speed, float wind\+Direction, std\+::string weather\+Type)
+\begin{DoxyCompactList}\small\item\em manually sets the values for the wind speed, direction, and weather type in \mbox{\hyperlink{classWeather}{Weather}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWeather_a9865d1984c6f0416446acd7a4c9d47bc}\label{classWeather_a9865d1984c6f0416446acd7a4c9d47bc}} 
+void \mbox{\hyperlink{classWeather_a9865d1984c6f0416446acd7a4c9d47bc}{Calculate\+Wind}} ()
+\begin{DoxyCompactList}\small\item\em calculates the wind vector based upon the new wind speed and direction \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classWeather_a539007ad6888f76d16787f36daf3dabe}{Get\+Wind}} ()
+\begin{DoxyCompactList}\small\item\em gets the wind in a vector form \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classWeather_a1941492a876248a349fae76d02160c3f}{Get\+Weather}} ()
+\begin{DoxyCompactList}\small\item\em allows access to instance of \mbox{\hyperlink{classWeather}{Weather}} singleton object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeather_aa404c94fec05b825454a7309827767c6}\label{classWeather_aa404c94fec05b825454a7309827767c6}} 
+\mbox{\hyperlink{classWeather_aa404c94fec05b825454a7309827767c6}{Weather}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classWeather}{Weather}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeather_aa1fdecedd17d730289cab3068da6e1c2}\label{classWeather_aa1fdecedd17d730289cab3068da6e1c2}} 
+float {\bfseries wind\+Speed}
+\item 
+\mbox{\Hypertarget{classWeather_acdd92e98256574a28bb1b1eab95a55da}\label{classWeather_acdd92e98256574a28bb1b1eab95a55da}} 
+float {\bfseries wind\+Direction}
+\item 
+\mbox{\Hypertarget{classWeather_ae2478ec8eb491dfd97fd9bf7463fc605}\label{classWeather_ae2478ec8eb491dfd97fd9bf7463fc605}} 
+std\+::string {\bfseries weather\+Type}
+\item 
+\mbox{\Hypertarget{classWeather_ae9587a38ae4b5a5514adf860d5bb9113}\label{classWeather_ae9587a38ae4b5a5514adf860d5bb9113}} 
+\mbox{\hyperlink{classVector3}{Vector3}} {\bfseries wind}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeather_a8df19d8d36269c074c607b74043a12ea}\label{classWeather_a8df19d8d36269c074c607b74043a12ea}} 
+static \mbox{\hyperlink{classWeather}{Weather}} $\ast$ {\bfseries instance} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classWeather}{Weather}} Singleton that contains singular instance of weather. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWeather_a1941492a876248a349fae76d02160c3f}\label{classWeather_a1941492a876248a349fae76d02160c3f}} 
+\index{Weather@{Weather}!GetWeather@{GetWeather}}
+\index{GetWeather@{GetWeather}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{GetWeather()}{GetWeather()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWeather}{Weather}} $\ast$ Weather\+::\+Get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+allows access to instance of \mbox{\hyperlink{classWeather}{Weather}} singleton object. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classWeather}{Weather}} singleton object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWeather_a22ebdcee63edcaf1f41d8237c5a0feee}\label{classWeather_a22ebdcee63edcaf1f41d8237c5a0feee}} 
+\index{Weather@{Weather}!GetWeatherType@{GetWeatherType}}
+\index{GetWeatherType@{GetWeatherType}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{GetWeatherType()}{GetWeatherType()}}
+{\footnotesize\ttfamily std\+::string Weather\+::\+Get\+Weather\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the type of weather currently in \mbox{\hyperlink{classWeather}{Weather}} 
+
+\begin{DoxyReturn}{Returns}
+the type of weather currently in the \mbox{\hyperlink{classWeather}{Weather}} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWeather_a539007ad6888f76d16787f36daf3dabe}\label{classWeather_a539007ad6888f76d16787f36daf3dabe}} 
+\index{Weather@{Weather}!GetWind@{GetWind}}
+\index{GetWind@{GetWind}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{GetWind()}{GetWind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Weather\+::\+Get\+Wind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the wind in a vector form 
+
+\begin{DoxyReturn}{Returns}
+the wind vector with it\textquotesingle{}s direction and magnitude 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWeather_acbe80228733441d7bf8eba605502c0eb}\label{classWeather_acbe80228733441d7bf8eba605502c0eb}} 
+\index{Weather@{Weather}!GetWindDirection@{GetWindDirection}}
+\index{GetWindDirection@{GetWindDirection}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{GetWindDirection()}{GetWindDirection()}}
+{\footnotesize\ttfamily float Weather\+::\+Get\+Wind\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the direction of the wind in \mbox{\hyperlink{classWeather}{Weather}} 
+
+\begin{DoxyReturn}{Returns}
+the direction of the wind 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWeather_ac371725c67bf575e6f46f766dbf6012c}\label{classWeather_ac371725c67bf575e6f46f766dbf6012c}} 
+\index{Weather@{Weather}!GetWindSpeed@{GetWindSpeed}}
+\index{GetWindSpeed@{GetWindSpeed}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{GetWindSpeed()}{GetWindSpeed()}}
+{\footnotesize\ttfamily float Weather\+::\+Get\+Wind\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter method for the wind speed 
+
+\begin{DoxyReturn}{Returns}
+The wind speed in weather instance 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pham0443/csci-\/3081w-\/\+S23/\+Team-\/001-\/16-\/homework4/libs/transit/include/Weather.\+h\item 
+/home/pham0443/csci-\/3081w-\/\+S23/\+Team-\/001-\/16-\/homework4/libs/transit/src/Weather.\+cc\end{DoxyCompactItemize}
