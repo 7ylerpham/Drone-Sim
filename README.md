@@ -108,8 +108,8 @@ The most impactful change we can perform for a future sprint can be implementing
 
 # Weather Singleton UML:
 
-![Screenshot](/uml/weather_uml.png)
+![Screenshot](project_files/uml/weather_uml.png)
 
 # RechargeStation Factory and BatteryDecorator UML:
 
-![Screenshot](/uml/recharge_battery_uml.jpeg)
+![Screenshot](project_files/uml/recharge_battery_uml.jpeg)
